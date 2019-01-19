@@ -29,8 +29,8 @@ module "remote-state-bucket" {
 |----------------------------------------|----------|----------|--------------------------------------------------------------------------|
 | `bucket_name`                          | Yes      |          | Name of bucket to create |
 | `noncurrent_lifecycle_enabled`         | No       | `true`   | When enabled, old versions are moved to IA -> Glacier -> Deleted |
-| `noncurrent_lifecycle_days_infrequent` | No       | `3`      | Number of days before noncurrent versions are moved to infrequent access |
-| `noncurrent_lifecycle_days_glacier`    | No       | `30`     | Number of days before noncurrent versions are moved to glacier |
+| `noncurrent_lifecycle_days_infrequent` | No       | `30`     | Number of days before noncurrent versions are moved to infrequent access |
+| `noncurrent_lifecycle_days_glacier`    | No       | `90`     | Number of days before noncurrent versions are moved to glacier |
 | `noncurrent_lifecycle_days_expiration` | No       | `365`    | Number of days before noncurrent versions are deleted |
 | `tags`                                 | No       | `ManagedBy = "terraform"` | Tags to apply to bucket |
 

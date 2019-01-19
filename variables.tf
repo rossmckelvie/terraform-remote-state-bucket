@@ -10,17 +10,17 @@ variable "noncurrent_lifecycle_enabled" {
 
 variable "noncurrent_lifecycle_days_infrequent" {
     description = "Number of days before noncurrent versions are moved to infrequent access"
-    default = 3
+    default = 30
 }
 
 variable "noncurrent_lifecycle_days_glacier" {
     description = "Number of days before noncurrent versions are moved to glacier"
-    default = 30
+    default = 90
 }
 
 variable "noncurrent_lifecycle_days_expiration" {
     description = "Number of days before noncurrent versions are deleted"
-    default = 365
+    default = 180
 }
 
 variable "tags" {
